@@ -5,6 +5,7 @@ header img{
 }
 
 
+
 header .fa-bars{
 	position: absolute;
 	display: inline-block;
@@ -137,5 +138,234 @@ span:active , .sede_span:active , .setting:active{
 	margin-top:470px;
 	margin-left: 95px;
 	font-size: 100%;
+}
+
+nav .fa-bars{
+	margin-left:-660px;
+}
+
+/*AQUI EMPIEZA LA PAGINA DE LAS ESTUDIANTES*/
+body{
+	background: whitesmoke;  /* COLOR GRIS MUY TENUE */
+}
+
+#logo{
+	width:160px;
+	height:70px;
+	text-align: center;
+	margin-left: 500px;
+}
+#barraSup{
+	background: gainsboro;  /* COLOR GRIS MAS OSCURO */
+	height: 150px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+}
+
+#listanav{
+	list-style: none;
+	text-align: center;
+	float: left;	
+}
+#over{   /* ENLACE A LA INFORMACION GENERAL- TODAS LAS SEDES- TODOS LOS TURNO- TODAS LAS GENERACIONES */
+	/*background: red;*/
+	color: orange;
+	float: left;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	margin-left: 50px;
+	margin-right: 25px;
+	text-decoration: none;
+}
+#stud{   /* ENLACE A LA INFORMACION DE LAS ALUMNAS */
+	/*background: blue;*/
+	color: orange;
+	float: left;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-decoration: none;
+	
+}
+#teac{   /* ENLACE AL AREA DE PROFESORES */
+	/*background: green;*/
+	color: orange;
+	float: left;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-decoration: none;
+	
+}
+
+h1{  /* TITULO  ESPECIALIZACION */
+	color: orange;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+h1:hover{
+	color: black;
+	
+}
+#menu{    /* MENU DE ESPECIALIZACIONES */
+	background: white;
+	border: 3px solid orange;
+	width: 320px;
+	height: 350px;
+	top: 250px;
+	margin-left: 20px;
+	position: absolute;
+	font-family: 'Lato', sans-serif;
+}
+#men{  /* LISTA DE ESPECIALIDADES */
+	color: orange;
+	padding-top: 15px;
+	padding-left:10px;
+	width: 220px;
+	height: 35px;
+	list-style: none;
+	font-family: 'Lato', sans-serif;
+}
+#men:hover{
+	color: white;
+	background: orange;
+	font-family: 'Lato', sans-serif;
+	
+}
+
+#study{   /* MARIA ALVAREZ*/
+	background: orange;
+	color: black;
+	width: 800px;
+	height: 300px;
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	margin-left: 400px;
+	top: 250px;
+	
+	
+}
+#study1{
+	background: orange;
+	color: black;
+	width: 800px;
+	height: 300px;
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	margin-left: 400px;
+	top: 610px;
+}
+#study2{
+	background: orange;
+	color: black;
+	width: 800px;
+	height: 300px;
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	margin-left: 400px;
+	top: 960px;
+}
+#study3{
+	background: orange;
+	color: black;
+	width: 800px;
+	height: 300px;
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	margin-left: 400px;
+	top: 1310px;
+}
+h2{
+	font-size: 30px;
+	font-width: 700;
+	font-family: 'Lato', sans-serif;
+}
+h3{
+	color: #444;
+	font-size: 17px;
+	font-width: 700;
+	font-family: 'Lato', sans-serif	
+}
+#datos{
+	position: absolute;
+	margin-left: 250px;
+	top: 0px;
+	font-family: 'Lato', sans-serif;
+	height: 260px;
+	width: 500px;
+	
+}
+
+#foto{
+	width: 200px;
+	height: 300px;
+	
+}
+#habilis{
+	/*background: yellow;*/
+	width: 450px;
+	height: 100px;
+	top: 0;
+	
+}
+#tech{			/*  MUESTRA EL PORCENTAJE DE HABILIDADES TECNICAS */
+	text-align: center;
+	width: 120px;
+	height: 80px;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif	
+	font-weight: bolder;
+	float: left;
+	margin-left: 5px;
+	
+}
+#tech:hover{
+	color: white;
+}
+    
+#soc{			/* MUESTRA EL PORCENTAJE DE HABILIDADES SOCIALES */
+	
+	text-align: center;
+	width: 100px;
+	height: 80px;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif	
+	font-weight: bolder;
+	float: left;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+#soc:hover{
+	color: white;
+}
+    
+#eng{			/* MUESTRA EL MANEJO DE IDIOMA INGLÉS */
+
+	text-align: center;
+	width: 120px;
+	height: 80px;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif	
+	font-weight: bolder;
+	float: left;
+	margin-right: 5px;
+}
+#eng:hover{
+	color: white;
+}
+#proa, #squa, #best{
+	/*background: red;*/
+	color: white;
+	margin-right: 15px;
+	margin-left: 30px;
+	width: 60px;
+	height: 60px;
+	top: -10;
+}
+#proa, #squa, #best:hover{
+	color:blue;
 
 }
