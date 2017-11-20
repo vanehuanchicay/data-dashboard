@@ -1,10 +1,72 @@
+
+.icon{
+	position: absolute;
+	top:15%;
+	left: 8%;
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.hamburger{
+	width: 42px;
+	height: 6px;
+	background: #666;
+	position:absolute;
+	top:15%;
+	left: 8%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	transition: .5s;
+}
+
+.hamburger:before,
+.hamburger:after
+{
+   content: "";
+   position: absolute;
+   width: 42px;
+   height: 6px;
+   background: #666;
+   box-shadow: 0 2px 5px rgba(0,0,0,.2);
+   transition: .5s;
+}
+
+.hamburger:before{
+	top:-16px;
+}
+
+.hamburger:after{
+	top:16px;
+}
+
+.icon.active .hamburger{
+	background: rgba(0,0,0,0);
+	box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+
+.icon.active .hamburger:before{
+	top:0;
+	transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after{
+	top:0;
+	transform: rotate(135deg);
+}
+
+
+*{
+	margin: 0;
+}
+
 header img{
  	position: relative;
  	width:230px;
  	margin-left: 510px;
+ 	margin-top: 10px;
 }
-
-
 
 header .fa-bars{
 	position: absolute;
@@ -33,9 +95,12 @@ header a:active{
 	width: 250px;
 	height: 470px;
 	position: absolute;
-	margin-top: 70px;
+	margin-top: 24px;
 	margin-left: 38px;	
+	z-index: 2;
+	
 }
+
 .valentina{
 	position: absolute;
 	width: 130px;
@@ -43,8 +108,8 @@ header a:active{
 	margin-left: 60px;
 	margin-top:15px;
 	border-radius: 50% ;
-
 }
+
 span{  /* usuario */
 	position: absolute;
 	margin-top:170px;
@@ -52,7 +117,6 @@ span{  /* usuario */
 	font-family: Lato;
 	font-weight: 300;
 	font-size: 90%;
-
 }
 
 .sede_span{ /* sede */
@@ -81,6 +145,7 @@ span{  /* usuario */
 	margin-left: 35px;
 	color: #666;
 }
+
 .fa-map-marker{ /* locacion */
 	position: absolute;
 	font-size: 150%;
@@ -97,7 +162,6 @@ span{  /* usuario */
 	color: #666;
 }
 
-
 span:hover , .sede_span:hover , .setting:hover{
 	color: #f3c600;
 	cursor: pointer;
@@ -111,33 +175,35 @@ span:active , .sede_span:active , .setting:active{
 
 .lima{
 	position: absolute;
-	margin-top:350px;
-	margin-left: 95px;
+	margin-top:390px;
+	margin-left: -620px;
 	font-weight: 300;
 	font-size: 100%;
+	z-index: 2;
 }
 
 .aqp{
 	position: absolute;
-	margin-top:390px;
-	margin-left: 95px;
+	margin-top:430px;
+	margin-left: -620px;
 	font-size: 100%;
-
+	z-index: 2;
 }
 
 .stg{
 	position: absolute;
-	margin-top:430px;
-	margin-left: 95px;
+	margin-top:470px;
+	margin-left:-620px;
 	font-size: 100%;
-
+	z-index: 2;
 }
 
 .mex{
 	position: absolute;
-	margin-top:470px;
-	margin-left: 95px;
+	margin-top:510px;
+	margin-left: -620px;
 	font-size: 100%;
+	z-index: 2;
 }
 
 nav .fa-bars{
@@ -145,218 +211,280 @@ nav .fa-bars{
 }
 
 /*AQUI EMPIEZA LA PAGINA DE LAS ESTUDIANTES*/
-body{
-	background: whitesmoke;  /* COLOR GRIS MUY TENUE */
+
+body{/* COLOR GRIS MUY TENUE fondo */
+	background: whitesmoke;  
 }
 
-#logo{
-	width:160px;
-	height:70px;
-	text-align: center;
-	margin-left: 500px;
-}
-#barraSup{
+.barraSup{/* franja gris */
 	background: gainsboro;  /* COLOR GRIS MAS OSCURO */
-	height: 150px;
+	height: 130px;
 	width: 100%;
+	margin-top: 25px;
 	position: absolute;
 	text-align: center;
 }
 
-#listanav{
-	list-style: none;
-	text-align: center;
-	float: left;	
+.naveg h2{ /*titulo stgo de chile */
+	font-size: 150%;
+	font-family: Lato;
+	font-weight: 700;
+	color: #555;
+	margin-top: 30px;
+	width: 1301px;
 }
-#over{   /* ENLACE A LA INFORMACION GENERAL- TODAS LAS SEDES- TODOS LOS TURNO- TODAS LAS GENERACIONES */
+
+.listanav{ /* lista navegacion */
+	margin-left:340px;
+	margin-top: 17px;
+}
+
+.listanav .over{   /* ENLACE A LA INFORMACION GENERAL- TODAS LAS SEDES- TODOS LOS TURNO- TODAS LAS GENERACIONES */
 	/*background: red;*/
 	color: orange;
 	float: left;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
+	font-size: 110%;
+	font-family: Lato;
+	font-weight: 600;
 	margin-left: 50px;
 	margin-right: 25px;
 	text-decoration: none;
 }
-#stud{   /* ENLACE A LA INFORMACION DE LAS ALUMNAS */
+
+.listanav .stud{   /* ENLACE A LA INFORMACION DE LAS ALUMNAS */
 	/*background: blue;*/
 	color: orange;
 	float: left;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
-	margin-left: 25px;
-	margin-right: 25px;
-	text-decoration: none;
-	
-}
-#teac{   /* ENLACE AL AREA DE PROFESORES */
-	/*background: green;*/
-	color: orange;
-	float: left;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
+	font-size: 110%;
+	font-weight: 600;
+	font-family: Lato;
 	margin-left: 25px;
 	margin-right: 25px;
 	text-decoration: none;
 	
 }
 
-h1{  /* TITULO  ESPECIALIZACION */
+.listanav .teac{   /* ENLACE AL AREA DE PROFESORES */
+	/*background: green;*/
+	color: orange;
+	float: left;
+	font-size: 110%;
+	font-family: Lato;
+	font-weight: 600;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-decoration: none;	
+}
+
+.menu{   /* borde MENU DE ESPECIALIZACIONES */   
+	background: white;
+	border: 2px solid orange;
+	width: 320px;
+	height: 300px;
+	margin-top: 210px;
+	margin-left: 20px;
+	position: absolute;
+	font-family: Lato;
+}
+
+.menu h1{  /* TITULO  ESPECIALIZACION */
 	color: orange;
 	text-align: center;
 	font-family: 'Lato', sans-serif;
+	font-size: 160%; /* nuevo */
+	margin-top: 35px;
+	margin-bottom: 15px;	
 }
-h1:hover{
-	color: black;
-	
-}
-#menu{    /* MENU DE ESPECIALIZACIONES */
-	background: white;
-	border: 3px solid orange;
-	width: 320px;
-	height: 350px;
-	top: 250px;
-	margin-left: 20px;
-	position: absolute;
-	font-family: 'Lato', sans-serif;
-}
-#men{  /* LISTA DE ESPECIALIDADES */
+
+.men{  /* LISTA DE ESPECIALIDADES */
 	color: orange;
 	padding-top: 15px;
 	padding-left:10px;
 	width: 220px;
-	height: 35px;
+	height: 25px;
 	list-style: none;
-	font-family: 'Lato', sans-serif;
-}
-#men:hover{
-	color: white;
-	background: orange;
-	font-family: 'Lato', sans-serif;
+	font-family: Lato;
+	font-size: 120%;
+	padding: 10px;
 	
 }
 
-#study{   /* MARIA ALVAREZ*/
-	background: orange;
+.men:hover{ /* menu*/
+	color: white;
+	background-color: orange;
+	font-family: Lato;
+	
+}
+
+.study{   /*contenedor*/
+	background-color: orange;
+	/*border: 1.4px solid orange;*/
+	box-shadow: 3px 3px 9px rgba(0,0,0,.3);
+	color: black;
+	width: 800px;
+	height: 300px;
+	font-family: Lato;
+	position: absolute;
+	margin-left: 400px;
+	margin-top: 210px;	
+		
+}
+
+.study1{ /* estudiante dos */
+	background-color: orange;
+	/*border: 1.4px solid orange;*/
+	box-shadow: 3px 3px 9px rgba(0,0,0,.3);
 	color: black;
 	width: 800px;
 	height: 300px;
 	font-family: 'Lato', sans-serif;
 	position: absolute;
 	margin-left: 400px;
-	top: 250px;
+	margin-top: 540px; 
+	
+}
+
+.study2{ /* estudiante tres */
+	background-color: orange;
+	/*border: 1.4px solid orange;*/
+	box-shadow: 3px 3px 9px rgba(0,0,0,.3);
+	color: black;
+	width: 800px;
+	height: 300px;
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	margin-left: 400px;
+	margin-top: 875px;
 	
 	
 }
-#study1{
-	background: orange;
+.study3{ /* estudiante cuatro */
+	background-color: orange;
+	/*border: 1.4px solid orange;*/
+	box-shadow: 3px 3px 9px rgba(0,0,0,.3);
 	color: black;
 	width: 800px;
 	height: 300px;
 	font-family: 'Lato', sans-serif;
 	position: absolute;
 	margin-left: 400px;
-	top: 610px;
+	margin-top: 1215px;
 }
-#study2{
-	background: orange;
-	color: black;
-	width: 800px;
-	height: 300px;
-	font-family: 'Lato', sans-serif;
-	position: absolute;
-	margin-left: 400px;
-	top: 960px;
+
+h3{ /*nombre alumnas */
+	font-size: 148%;
+	font-family: Lato;
+	font-weight: 700;
+	margin-top: 25px;
+
+	/*color: #555; */
+	color: #000;
+
 }
-#study3{
-	background: orange;
-	color: black;
-	width: 800px;
-	height: 300px;
-	font-family: 'Lato', sans-serif;
-	position: absolute;
-	margin-left: 400px;
-	top: 1310px;
+
+h4{ /* subtitulo front end */
+	/*color: #444;*/
+	color: #000;
+	font-size: 95%;
+	font-width: 900;
+	font-family: Lato;
+	margin-top: 18px;
+	
 }
-h2{
-	font-size: 30px;
-	font-width: 700;
-	font-family: 'Lato', sans-serif;
-}
-h3{
-	color: #444;
-	font-size: 17px;
-	font-width: 700;
-	font-family: 'Lato', sans-serif	
-}
-#datos{
+
+.datos{ /* que es ?? */
 	position: absolute;
 	margin-left: 250px;
 	top: 0px;
 	font-family: 'Lato', sans-serif;
 	height: 260px;
 	width: 500px;
-	
 }
 
-#foto{
+.foto{
 	width: 200px;
 	height: 300px;
-	
 }
-#habilis{
+
+.habilis{
 	/*background: yellow;*/
 	width: 450px;
 	height: 100px;
-	top: 0;
+	margin-top: 15px;
 	
 }
-#tech{			/*  MUESTRA EL PORCENTAJE DE HABILIDADES TECNICAS */
+
+.tech{			/*  MUESTRA EL PORCENTAJE DE HABILIDADES TECNICAS */
 	text-align: center;
 	width: 120px;
 	height: 80px;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif	
-	font-weight: bolder;
+	font-size: 105%;
+	font-family: Lato;
+	font-weight: 400;
 	float: left;
 	margin-left: 5px;
-	
+	margin-top: 10px;
 }
-#tech:hover{
+
+.tech:hover{
 	color: white;
 }
+
+.habilis span{ /* span valores y nivel de ingles */
+ 	font-size: 110%;
+	font-weight: 900;
+	margin-top: 22px;
+	margin-left: -43px;
+}
+
+.habilis span:hover{
+	color: white;
+}
+
+.eng span{ /* english */
+	margin-left: -60px;
+}
+
+.eng .alto{ /* high */
+
+	margin-left: -48px;
+}
     
-#soc{			/* MUESTRA EL PORCENTAJE DE HABILIDADES SOCIALES */
-	
+.soc{ /* MUESTRA EL PORCENTAJE DE HABILIDADES SOCIALES */
 	text-align: center;
 	width: 100px;
 	height: 80px;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif	
-	font-weight: bolder;
+	font-size: 105%;
+	font-family: Lato;
+	font-weight: 400;
 	float: left;
 	margin-left: 40px;
 	margin-right: 40px;
+	margin-top: 10px;
 }
-#soc:hover{
+
+.soc:hover{
 	color: white;
 }
-    
-#eng{			/* MUESTRA EL MANEJO DE IDIOMA INGLÉS */
+
+.eng{			/* MUESTRA EL MANEJO DE IDIOMA INGLÉS */
 
 	text-align: center;
 	width: 120px;
 	height: 80px;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif	
-	font-weight: bolder;
+	font-size: 105%;
+	font-family: Lato;	
+	font-weight: 400;
 	float: left;
 	margin-right: 5px;
+	margin-top: 10px;
 }
-#eng:hover{
+
+.eng:hover{
 	color: white;
 }
-#proa, #squa, #best{
+
+.proa , .squa ,.best{ /* iconos premios */
 	/*background: red;*/
 	color: white;
 	margin-right: 15px;
@@ -365,7 +493,10 @@ h3{
 	height: 60px;
 	top: -10;
 }
-#proa, #squa, #best:hover{
+
+/*
+.proa , .squa , .best:hover{
 	color:blue;
 
-}
+} 
+*/

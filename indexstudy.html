@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Lato:700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900" rel="stylesheet"> 
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <title>Data Dashboard</title>
@@ -17,129 +17,119 @@
       </div>
       <img src="assets/images/logo-laboratoria.svg" alt=""> 
     </header>
-    <!-- <nav>
-      <h2>General</h2>
-      <h2>Estudiantes</h2>
-    </nav>
-  -->
-    <!-- Base de datos -->
-    <script src="./js/data.js"></script>
-    <!-- Aquí va tus archivos JS -->
 
-    <script src="js/app.js"></script>
-
-   <section id="barraSup">
-    <nav id="naveg">
+   <section class="barraSup">
+    <nav class="naveg">
       <h2>SANTIAGO DE CHILE. V GENERACIÓN (2017 - II)</h2>
-
-      <ul id="listanav">
-        <a id="over" href="" >OVERVIEW</li>
-        <a id="stud" src="indexstudy.html">STUDENTS</li>
-        <a id="teac" href="">TEACHERS</li>
+      <ul class="listanav">
+        <a class="over" href="index.html" >GENERAL</li> </a>
+        <a class="stud" href ="">ESTUDIANTES</li> </a>
+        <a class="teac" href="">PROFESORES</li> </a>
       </ul>
 
     </nav>
 
   </section>
   
-  <nav id="menu">   <!--este es el menú de las especializaciones-->
-    <h1>SPECIALIZATION</h1>
+  <nav class="menu">   <!--este es el menú de las especializaciones-->
+    <h1>ESPECIALIZACIÓN</h1>
 
     <ul>   
-      <li id="men">JAVASCRIPT</li>
+      <li class="men">JAVASCRIPT</li>
       <br>
-      <li id="men">UX DESIGNER</li>
+      <li class="men">UX DESIGNER</li>
       <br>
-      <li id="men">FRONT END DESIGNER</li>
+      <li class="men">FRONT END DESIGNER</li>
     </ul>
   </nav>    <!--aqui termina el area del menú de especializaciones-->
 
-  <section id="study">    <!--este es el perfil de cada alumna -->
-    <img src="assets/images/alumna.jpg" id="foto">   <!-- foto de cada alumna-->
-    <div id="datos">
-    <h2>MARIA ALVAREZ</h2> <!--nombre-->
-    <h3>FRONT END DEVELOPER</h3>   <!--especialización-->
+  <section class="study">    <!--este es el perfil de cada alumna -->
+    <img src="assets/images/alumna.jpg" class="foto">   <!-- foto de cada alumna-->
+    <div class="datos">
+    <h3>MARIA ALVAREZ</h3> <!--nombre-->
+    <h4>FRONT END DEVELOPER</h4>   <!--especialización-->
 
-    <div id="habilis">   <!-- menú de habilidades técnicas, sociales e idioma-->
-      <div id="tech">TECHNICAL SKILLS <br> 85% </div>
+    <div class="habilis">   <!-- menú de habilidades técnicas, sociales e idioma-->
+      <div class="tech">TECHNICAL SKILLS <span> 85% </span></div>
     
-      <div id="soc">SOCIAL SKILLS <br> 89% </div>
+      <div class="soc">SOCIAL SKILLS <span> 89% </span></div>
     
-      <div id="eng">ENGLISH SKILLS <br> MEDIUM</div>
+      <div class="eng">ENGLISH SKILLS <span> MEDIUM</span></div>
     </div>  
 
-    <div id="medals">   <!-- sección de premios ganados durante el bootcamp-->
-      <img id="proa" src="assets/images/premios/proactiva.png" title="LA MAS PROACTIVA">  <!--premio PROACTIVA-->
-      <img id="squa" src="assets/images/premios/mejor-squad.png" title="MEJOR SQUAD"> <!--premio BEST SQUAD-->
-      <img id="best" src="assets/images/premios/team-player.png" title="BEST TEAM PLAYER">  <!--premio BEST PLAYER-->
+    <div class="medals">   <!-- sección de premios ganados durante el bootcamp-->
+      <img class="proa" src="assets/images/premios/proactiva.png" title="LA MAS PROACTIVA">  <!--premio PROACTIVA-->
+      <img class="squa" src="assets/images/premios/mejor-squad.png" title="MEJOR SQUAD"> <!--premio BEST SQUAD-->
+      <img class="best" src="assets/images/premios/team-player.png" title="BEST TEAM PLAYER">  <!--premio BEST PLAYER-->
     </div>
   </section> 
   <br>
-  <section id="study1">    <!--este es el perfil de cada alumna -->
-    <img src="assets/images/alumna.jpg" id="foto">   <!-- foto de cada alumna-->
-    <div id="datos">
-    <h2>CLAUDIA CASTRO</h2> <!--nombre-->
-    <h3>FRONT END DEVELOPER</h3>   <!--especialización-->
+  <section class="study1">    <!--este es el perfil de cada alumna -->
+    <img src="assets/images/alumna.jpg" class="foto">   <!-- foto de cada alumna-->
+    <div class="datos">
+    <h3>CLAUDIA CASTRO</h3> <!--nombre-->
+    <h4>FRONT END DEVELOPER</h4>   <!--especialización-->
 
-    <div id="habilis">   <!-- menú de habilidades técnicas, sociales e idioma-->
-      <div id="tech">TECHNICAL SKILLS <br> 82% </div>
+    <div class="habilis">   <!-- menú de habilidades técnicas, sociales e idioma-->
+      <div class="tech">TECHNICAL SKILLS <span> 82% </span></div>
     
-      <div id="soc">SOCIAL SKILLS <br> 95% </div>
+      <div class="soc">SOCIAL SKILLS <span> 95% </span></div>
     
-      <div id="eng">ENGLISH SKILLS <br> MEDIUM</div>
+      <div class="eng">ENGLISH SKILLS <span> MEDIUM</span></div>
     </div>  
 
-    <div id="medals">   <!-- sección de premios ganados durante el bootcamp-->
-      <img id="proa" src="assets/images/premios/proactiva.png" title="LA MAS PROACTIVA">  <!--premio PROACTIVA-->
-      <img id="squa" src="assets/images/premios/mejor-squad.png" title="MEJOR SQUAD"> <!--premio BEST SQUAD-->
-      <!--<img id="best" src="assets/images/premios/team-player.png" title="BEST TEAM PLAYER">  <!--premio BEST PLAYER-->
+    <div class="medals">   <!-- sección de premios ganados durante el bootcamp-->
+      <img class="proa" src="assets/images/premios/proactiva.png" title="LA MAS PROACTIVA">  <!--premio PROACTIVA-->
+      <img class="squa" src="assets/images/premios/mejor-squad.png" title="MEJOR SQUAD"> <!--premio BEST SQUAD-->
+      <!--<img id="best" src="assets/images/premios/team-player.png" title="BEST TEAM PLAYER">premio BEST PLAYER-->
     </div>
     </div>
   </section>
   <br>
-  <section id="study2">    <!--este es el perfil de cada alumna -->
-    <img src="assets/images/alumna.jpg" id="foto">   <!-- foto de cada alumna-->
-    <div id="datos">
-    <h2>ALEJANDRA HERRERA</h2> <!--nombre-->
-    <h3>FRONT END DEVELOPER</h3>   <!--especialización-->
+  <section class="study2">    <!--este es el perfil de cada alumna -->
+    <img src="assets/images/alumna.jpg" class="foto">   <!-- foto de cada alumna-->
+    <div class="datos">
+    <h3>ALEJANDRA HERRERA</h3> <!--nombre-->
+    <h4>FRONT END DEVELOPER</h4>   <!--especialización-->
 
-    <div id="habilis">   <!-- menú de habilidades técnicas, sociales e idioma-->
-      <div id="tech">TECHNICAL SKILLS <br> 98% </div>
+    <div class="habilis">   <!-- menú de habilidades técnicas, sociales e idioma-->
+      <div class="tech">TECHNICAL SKILLS <span> 98% </span></div>
     
-      <div id="soc">SOCIAL SKILLS <br> 100% </div>
+      <div class="soc">SOCIAL SKILLS <span> 100% </span></div>
     
-      <div id="eng">ENGLISH SKILLS <br> MEDIUM </div>
+      <div class="eng">ENGLISH SKILLS <span> MEDIUM </span></div>
     </div>  
 
-   <div id="medals">   <!-- sección de premios ganados durante el bootcamp-->
-     <!-- <img id="proa" src="assets/images/premios/proactiva.png" title="LA MAS PROACTIVA">  <!--premio PROACTIVA-->
-      <!--<img id="squa" src="assets/images/premios/mejor-squad.png" title="MEJOR SQUAD"> <!--premio BEST SQUAD-->
-      <img id="best" src="assets/images/premios/team-player.png" title="BEST TEAM PLAYER">  <!--premio BEST PLAYER-->
+   <div class="medals">   <!-- sección de premios ganados durante el bootcamp-->
+     <!-- <img id="proa" src="assets/images/premios/proactiva.png" title="LA MAS PROACTIVA"> premio PROACTIVA-->
+      <!--<img id="squa" src="assets/images/premios/mejor-squad.png" title="MEJOR SQUAD"> premio BEST SQUAD-->
+      <img  class="best" src="assets/images/premios/team-player.png" title="BEST TEAM PLAYER">  <!--premio BEST PLAYER-->
     </div>
   </section>
   <br>
-  <section id="study3">    <!--este es el perfil de cada alumna -->
-    <img src="assets/images/alumna.jpg" id="foto">   <!-- foto de cada alumna-->
-    <div id="datos">
-    <h2>PATRICIA HERNANDEZ</h2> <!--nombre-->
-    <h3>FRONT END DEVELOPER</h3>   <!--especialización-->
+  <section class="study3">    <!--este es el perfil de cada alumna -->
+    <img src="assets/images/alumna.jpg" class="foto">   <!-- foto de cada alumna-->
+    <div class="datos">
+    <h3>PATRICIA HERNANDEZ</h3> <!--nombre-->
+    <h4>FRONT END DEVELOPER</h4>   <!--especialización-->
 
-    <div id="habilis">   <!-- menú de habilidades técnicas, sociales e idioma-->
-      <div id="tech">TECHNICAL SKILLS <br> 89% </div>
+    <div class="habilis">   <!-- menú de habilidades técnicas, sociales e idioma-->
+      <div class="tech">TECHNICAL SKILLS <span> 89% </span></div>
     
-      <div id="soc">SOCIAL SKILLS <br> 85% </div>
+      <div class="soc">SOCIAL SKILLS <span> 85% </span></div>
     
-      <div id="eng">ENGLISH SKILLS <br> HIGH </div>
+      <div class="eng">ENGLISH SKILLS <span class="alto"> HIGH </span></div>
     </div>  
 
-    <div id="medals">   <!-- sección de premios ganados durante el bootcamp-->
-      <!--<img id="proa" src="assets/images/premios/proactiva.png" title="LA MAS PROACTIVA">  <!--premio PROACTIVA-->
-      <img id="squa" src="assets/images/premios/mejor-squad.png" title="MEJOR SQUAD"> <!--premio BEST SQUAD-->
-      <!--<img id="best" src="assets/images/premios/team-player.png" title="BEST TEAM PLAYER">  <!--premio BEST PLAYER-->
+    <div class="medals">   <!-- sección de premios ganados durante el bootcamp-->
+      <!--<img id="proa" src="assets/images/premios/proactiva.png" title="LA MAS PROACTIVA"> premio PROACTIVA-->
+      <img class="squa" src="assets/images/premios/mejor-squad.png" title="MEJOR SQUAD"> <!--premio BEST SQUAD-->
+      <!--<img id="best" src="assets/images/premios/team-player.png" title="BEST TEAM PLAYER">premio BEST PLAYER-->
     </div>
   </section>
 
-        
+            
+    <script src="js/app.js"></script>
   </body>
 </html>
 

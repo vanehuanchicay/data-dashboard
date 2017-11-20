@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>My Chart.js Chart</title>
+</head>
+<body>
+  <section class="barraSup"> <!--nuevo -->
+    <nav class="naveg">
+      <h2>SANTIAGO DE CHILE. V GENERACIÓN (2017 - II)</h2>
+      <ul class="listanav">
+        <a class="over">GENERAL </a>
+        <a class="stud" href="indexstudy.html">ESTUDIANTES </a>
+        <a class="teac" href="">PROFESORES </a>
+      </ul>
+
+    </nav>
+  </section> <!--nuevo -->
+
+  <div class="container">
+    <canvas id="line-chart" width="850px" height="450px"></canvas>
+  </div>
+
+  <script>
+    new Chart(document.getElementById("line-chart"), {
+  type: 'horizontalBar',
+  data: {
+    labels: ['Sprint I', 'Sprint II', 'Sprint III', 'Sprint IV'],
+    datasets: [{ 
+        data: [53, 51,48,45],
+        label: "Alumnas Presentes",
+        borderColor: "#3e95cd",
+        fill: false
+      }, { 
+        data: [2,5,5,7],
+        label: "Deserción",
+        borderColor: "#8e5ea2",
+        fill: false
+      }, { 
+        data: [60,67,73,80],
+        label: "Promedio de Metas",
+        borderColor: "#3cba9f",
+        fill: false
+      }, { 
+        data: [66,70,73,82],
+        label: "Promedio Sprint",
+        borderColor: "#e8c3b9",
+        fill: false
+      }, { 
+        data: [70,78,80,90],
+        label: "Promedio HSE",
+        borderColor: "#c45850",
+        fill: false
+      },{
+        data: [80,75,90,95],
+        label: "Satisfacción",
+        borderColor: "#C440B7",
+        fill: false
+      }
+    ]
+
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Estadística General',
+      fontSize:20
+    },legend:{
+      display:true,
+      position:"right",
+    },
+      responsive: false
+      }
+  
+});
+  </script>
+
+</body>
+</html>

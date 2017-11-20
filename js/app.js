@@ -55,6 +55,9 @@ function add() { // función del boton
 		container.appendChild(spottwo);
 		container.appendChild(spotThree);
 		container.appendChild(spotFour);
+
 		
 	})
 }
+
+	
