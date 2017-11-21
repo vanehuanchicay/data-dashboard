@@ -1,8 +1,8 @@
 
 .icon{
 	position: absolute;
-	top:15%;
-	left: 8%;
+	top:10%;
+	left: 4%;
 	transform: translate(-50%, -50%);
 	width: 80px;
 	height: 80px;
@@ -10,12 +10,12 @@
 }
 
 .hamburger{
-	width: 42px;
-	height: 6px;
+	width: 35px;
+	height: 5px;
 	background: #666;
 	position:absolute;
-	top:15%;
-	left: 8%;
+	top:45%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	box-shadow: 0 2px 5px rgba(0,0,0,.2);
 	transition: .5s;
@@ -26,19 +26,19 @@
 {
    content: "";
    position: absolute;
-   width: 42px;
-   height: 6px;
+   width: 35px;
+   height: 5px;
    background: #666;
    box-shadow: 0 2px 5px rgba(0,0,0,.2);
    transition: .5s;
 }
 
 .hamburger:before{
-	top:-16px;
+	top:-11px;
 }
 
 .hamburger:after{
-	top:16px;
+	top:11px;
 }
 
 .icon.active .hamburger{
@@ -127,6 +127,11 @@ span{  /* usuario */
 	font-family: Lato;
 	font-weight: 300;
 	font-size: 90%;
+}
+
+.sede_span:visited{
+	text-decoration: overline;
+	color:#f3c600;
 }
 
 .setting{
@@ -392,7 +397,7 @@ h4{ /* subtitulo front end */
 	
 }
 
-.datos{ /* que es ?? */
+.datos{
 	position: absolute;
 	margin-left: 250px;
 	top: 0px;
@@ -494,6 +499,7 @@ h4{ /* subtitulo front end */
 	top: -10;
 }
 
+<<<<<<< d8662327f35d83a0b2a03cb2aabbccd8ad2a4c2b
 
 /* AQUI COMIENZAN LOS GRAFICOS */
 
@@ -562,3 +568,93 @@ h4{ /* subtitulo front end */
 	font-family: Lato;
 	padding-bottom: 200px;
 }
+=======
+.con .sections_btn_holder{ /*aqui empiza checkbox */
+	float:left;
+	width:144px;
+	height:46px;
+	margin-top: -45px;
+	margin-left: 60px;
+	
+}
+
+.con .sections_panel{
+	position:absolute;
+	background-color: white;
+	border: .1px solid #ccc;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+	height:0px;
+	width:150px;
+	top:60px;
+	left:930px;
+	overflow:hidden;
+	z-index:10000;
+	transition: height 0.3s linear 0s;
+}
+.con .sections_panel div{
+	padding:20px;
+	height:238px;
+	margin:10px;
+	color:orange;
+	font-family: Lato;
+	text-align: left;
+	
+}
+.con .sections_panel input{
+	margin-bottom:15px;
+	color:orange;
+	font-family: Lato;
+	text-align: left;
+}
+
+
+.triangulo{
+   	width: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 15px solid #666;
+	margin-left: 0px;
+	margin-top:10px;
+}
+.triangulo:hover{
+	border-top: 15px solid orange;
+	cursor: pointer;
+}
+
+/*
+.container{
+	outline: 1px solid yellow;
+	margin-top: 200px;
+	position: absolute;
+}
+
+.triangulo{
+   	width: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 15px solid #666;
+	margin-left: 925px;
+	margin-top:-35px;
+}
+.triangulo:hover{
+	border-top: 15px solid orange;
+	cursor: pointer;
+}
+
+.option{
+	display:grid;
+}
+
+.label{
+	display: inline;
+	outline: 1px solid pink;
+	margin-bottom: 5px;
+	width:80px;
+}
+
+.check{
+	margin-top:-20px;
+	display:inline;
+}
+*/
+>>>>>>> ultimos cambios

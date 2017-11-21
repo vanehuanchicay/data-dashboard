@@ -4,18 +4,25 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900" rel="stylesheet"> 
-
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript"> /* codigo para menu */
+      $(document).ready(function(){
+          $(".icon").click(function(){
+              $(".icon").toggleClass("active");
+          })
+      })
+    </script> 
     <title>Data Dashboard</title>
   </head>
   <body>
-
-    <header>
+ <header>
       <div id="cont" class="cont">  
-        <a ><i id="stripes" onclick="add()" class="fa fa-bars" aria-hidden="true" ></i></a>
+         <div id="stripes" class="icon" onclick="add()">
+      <div class="hamburger"> </div>
+    </div>
+        <img src="assets/images/logo-laboratoria.svg" alt=""> 
       </div>
-      <img src="assets/images/logo-laboratoria.svg" alt=""> 
     </header>
 
    <section class="barraSup">
@@ -26,11 +33,23 @@
         <a class="stud" href ="indexstudy.html">ESTUDIANTES</a>
         <a class="teac" href="">PROFESORES</a>
       </ul>
-
     </nav>
+     <div id="con" class="con">
+        <div class ="sections_btn_holder">
+          <div class="triangulo" onclick="toggleNavPanel('sections_panel')"></div>
+        </div>
+        <div id="sections_panel" class="sections_panel">
+         <div>
+            <input type="checkbox"> 2015-I <br>
+            <input type="checkbox"> 2016-I <br>
+            <input type="checkbox"> 2016-II <br>
+            <input type="checkbox"> 2017-I <br>
+            <input type="checkbox"> 2017-II <br>
+         </div>
+       </div>
+      </div>
 
   </section>
-  
   <nav class="menu">   <!--este es el menú de las especializaciones-->
     <h1>ESPECIALIZACIÓN</h1>
 

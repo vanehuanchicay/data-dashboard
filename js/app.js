@@ -16,6 +16,7 @@ function add() { // función del boton
 	localSpan.textContent="SEDE"; // creo el contenido
 	localSpan.className= "sede_span"; //  creo una clase
 
+
 	var setting = document.createElement("span"); // creo la opcion sede
 	setting.textContent="SETTINGS"; // creo el contenido
 	setting.className= "setting"; //  creo una clase
@@ -56,8 +57,20 @@ function add() { // función del boton
 		container.appendChild(spotThree);
 		container.appendChild(spotFour);
 
-		
 	})
+
+
+	} // codigo para checkbox
+function toggleNavPanel(x){
+	 var panel = document.getElementById(x), maxH="200px";
+		if(panel.style.height == maxH){
+			panel.style.height = "0px";
+		
+		 } else {
+			 panel.style.height = maxH;
+			
+  }
 }
+
 
 	
