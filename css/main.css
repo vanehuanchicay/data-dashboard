@@ -116,7 +116,7 @@ span{  /* usuario */
 	margin-left: 65px;
 	font-family: Lato;
 	font-weight: 300;
-	font-size: 90%;
+	font-size: 100%;
 }
 
 .sede_span{ /* sede */
@@ -126,13 +126,9 @@ span{  /* usuario */
 	margin-bottom: 20px;
 	font-family: Lato;
 	font-weight: 300;
-	font-size: 90%;
+	font-size: 100%;
 }
 
-.sede_span:visited{
-	text-decoration: overline;
-	color:#f3c600;
-}
 
 .setting{
 	position: absolute;
@@ -140,7 +136,7 @@ span{  /* usuario */
 	margin-left:65px;
 	font-family: Lato;
 	font-weight: 300;
-	font-size: 90%;
+	font-size: 100%;
 }
 
 .fa-user{ /* icono usuario */
@@ -183,7 +179,7 @@ span:active , .sede_span:active , .setting:active{
 	margin-top:390px;
 	margin-left: -620px;
 	font-weight: 300;
-	font-size: 100%;
+	font-size: 110%;
 	z-index: 2;
 }
 
@@ -191,7 +187,7 @@ span:active , .sede_span:active , .setting:active{
 	position: absolute;
 	margin-top:430px;
 	margin-left: -620px;
-	font-size: 100%;
+	font-size: 110%;
 	z-index: 2;
 }
 
@@ -199,7 +195,7 @@ span:active , .sede_span:active , .setting:active{
 	position: absolute;
 	margin-top:470px;
 	margin-left:-620px;
-	font-size: 100%;
+	font-size: 110%;
 	z-index: 2;
 }
 
@@ -207,7 +203,7 @@ span:active , .sede_span:active , .setting:active{
 	position: absolute;
 	margin-top:510px;
 	margin-left: -620px;
-	font-size: 100%;
+	font-size: 110%;
 	z-index: 2;
 }
 
@@ -266,6 +262,7 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	margin-left: 25px;
 	margin-right: 25px;
 	text-decoration: none;
+
 	
 }
 
@@ -286,7 +283,7 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	border: 2px solid orange;
 	width: 320px;
 	height: 300px;
-	margin-top: 210px;
+	margin-top: 80px;
 	margin-left: 20px;
 	position: absolute;
 	font-family: Lato;
@@ -297,21 +294,22 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	font-size: 160%; /* nuevo */
-	margin-top: 35px;
-	margin-bottom: 15px;	
+	margin-top: 38px;
+	margin-bottom: 15px;
+	margin-left:-25px;
+
 }
 
 .men{  /* LISTA DE ESPECIALIDADES */
 	color: orange;
-	padding-top: 15px;
 	padding-left:10px;
 	width: 220px;
-	height: 25px;
+	height: 20px;
 	list-style: none;
 	font-family: Lato;
 	font-size: 120%;
-	padding: 10px;
-	
+	padding: 15px;
+	padding-bottom: 28px;
 }
 
 .men:hover{ /* menu*/
@@ -331,8 +329,7 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	font-family: Lato;
 	position: absolute;
 	margin-left: 400px;
-	margin-top: 210px;	
-		
+	margin-top: 80px;		
 }
 
 .study1{ /* estudiante dos */
@@ -345,7 +342,7 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	font-family: 'Lato', sans-serif;
 	position: absolute;
 	margin-left: 400px;
-	margin-top: 540px; 
+	margin-top: 420px; 	
 	
 }
 
@@ -359,7 +356,7 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	font-family: 'Lato', sans-serif;
 	position: absolute;
 	margin-left: 400px;
-	margin-top: 875px;
+	margin-top: 765px;
 	
 	
 }
@@ -373,28 +370,25 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	font-family: 'Lato', sans-serif;
 	position: absolute;
 	margin-left: 400px;
-	margin-top: 1215px;
+	margin-top: 1108px;
 }
 
-h3{ /*nombre alumnas */
-	font-size: 148%;
+.study h3 , .study1 h3 , .study2 h3 , .study3 h3{ /*nombre alumnas */
+	font-size: 160%;
 	font-family: Lato;
 	font-weight: 700;
 	margin-top: 25px;
-
 	/*color: #555; */
 	color: #000;
-
 }
 
-h4{ /* subtitulo front end */
+.study h4 , .study1 h4 , .study2 h4 , .study3 h4 { /* subtitulo front end */
 	/*color: #444;*/
-	color: #000;
-	font-size: 95%;
+	color: #111;
+	font-size: 120%;
 	font-width: 900;
 	font-family: Lato;
 	margin-top: 18px;
-	
 }
 
 .datos{
@@ -416,7 +410,6 @@ h4{ /* subtitulo front end */
 	width: 450px;
 	height: 100px;
 	margin-top: 15px;
-	
 }
 
 .tech{			/*  MUESTRA EL PORCENTAJE DE HABILIDADES TECNICAS */
@@ -439,25 +432,16 @@ h4{ /* subtitulo front end */
  	font-size: 110%;
 	font-weight: 900;
 	margin-top: 22px;
-	margin-left: -43px;
+	margin-left: -39px;
 }
 
 .habilis span:hover{
 	color: white;
 }
-
-.eng span{ /* english */
-	margin-left: -60px;
-}
-
-.eng .alto{ /* high */
-
-	margin-left: -48px;
-}
-    
+ 
 .soc{ /* MUESTRA EL PORCENTAJE DE HABILIDADES SOCIALES */
 	text-align: center;
-	width: 100px;
+	width: 80px;
 	height: 80px;
 	font-size: 105%;
 	font-family: Lato;
@@ -475,7 +459,7 @@ h4{ /* subtitulo front end */
 .eng{			/* MUESTRA EL MANEJO DE IDIOMA INGLÉS */
 
 	text-align: center;
-	width: 120px;
+	width: 100px;
 	height: 80px;
 	font-size: 105%;
 	font-family: Lato;	
@@ -485,9 +469,18 @@ h4{ /* subtitulo front end */
 	margin-top: 10px;
 }
 
+.eng span{
+	margin-left:-55px;
+} 
+
 .eng:hover{
 	color: white;
 }
+
+.eng .alto{ /* high */
+	margin-left: -45px;
+}
+
 
 .proa , .squa ,.best{ /* iconos premios */
 	/*background: red;*/
@@ -506,6 +499,7 @@ h4{ /* subtitulo front end */
 
 	margin-left:220px;
 	margin-top: 100px;
+	padding:0;
 }
 
 .container1{  /*enrollment */
@@ -549,7 +543,7 @@ h4{ /* subtitulo front end */
 	
 	position: absolute;
 	margin-top: 1150px;
-	margin-left: 200px;
+	margin-left: 150px;
 	font-family: Lato;
 	
 }
@@ -557,7 +551,7 @@ h4{ /* subtitulo front end */
 .donut2{ /*LIFE SKILLS STUDENT THAT MEET THE TARGET*/
 	position: absolute;
 	margin-top: 1150px;
-	margin-left: 800px;
+	margin-left: 750px;
 	font-family: Lato;
 	
 }
@@ -565,7 +559,7 @@ h4{ /* subtitulo front end */
 .container6{   /*evaluaciones teacher jedi autoevaluacion satisfaccion alumnas */
 
 	position: absolute;
-	margin-top: 1650px;
+	margin-top: 1600px;
 	margin-left: 170px;
 	font-family: Lato;
 	padding-bottom: 200px;
