@@ -101,7 +101,7 @@ header a:active{
 	
 }
 
-.valentina{
+.valentina{   /*IMAGEN MENU USUARIO */
 	position: absolute;
 	width: 130px;
 	height: 130px;
@@ -499,59 +499,66 @@ h4{ /* subtitulo front end */
 
 
 .container{  /*PRIMER GRAFICO // *vista general generación actual*/
-	background: lightgoldenrodyellow;
+	background: mintcream;
+	border: 2px solid grey;
 	position: absolute;
 	margin-top: 250px;
-	margin-left: 100px;
 	font-family: Lato;
 
 }
 .container1{  /*enrollment */
-	background: papayawhip;
+	background: mintcream;
 	position: absolute;
 	margin-top: 750px;
-	margin-left: 50px;
+	margin-left: 100px;
 	font-family: Lato;
 }
 .container2{  /*ACHIEVEMENT *comparación 2016 y 2017 */
-	background: lightcyan;
+	background: mintcream;
 	position: absolute;
 	margin-top: 750px;
-	margin-left: 450px;
+	margin-left: 500px;
 	font-family: Lato;
 
 }
 .container3{  /*NEW PROMOTORS SCORE  *comparación 2016 y 2017 */
-	background: palegoldenrod;
+	background: mintcream;
 	position: absolute;
 	margin-top: 750px;
-	margin-left: 850px;
+	margin-left: 900px;
 	float: left;
 	font-family: Lato;
 
 }
-
-.donut{
-	background: peachpuff;
-	position: absolute;
-	margin-top: 1600px;
-	margin-left: 100px;
-	font-family: Lato;
-	
-}
-
-.donut2{
-	background: lightcyan;
-	position: absolute;
-	margin-top: 1600px;
-	margin-left: 750px;
-	font-family: Lato;
-	
-}
 #chart_div{  /*TECH Y LIFE SKILLS*/
 	position: absolute;
-	margin-top: 1100px;
-	margin-left: 200px;
+	margin-top: 1150px;
+	margin-left: 150px;
 	font-family: Lato;
 	
+}
+.donut{  /*TECH SKILLS STUDENT THAT MEET THE TARGET*/
+	
+	position: absolute;
+	margin-top: 1650px;
+	margin-left: 300px;
+	font-family: Lato;
+	
+}
+
+.donut2{ /*LIFE SKILLS STUDENT THAT MEET THE TARGET*/
+	position: absolute;
+	margin-top: 1650px;
+	margin-left: 700px;
+	font-family: Lato;
+	
+}
+
+.container6{   /*evaluaciones teacher jedi autoevaluacion satisfaccion alumnas */
+
+	position: absolute;
+	margin-top: 2000px;
+	margin-left: 200px;
+	font-family: Lato;
+	padding-bottom: 200px;
 }

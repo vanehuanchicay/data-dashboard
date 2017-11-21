@@ -33,22 +33,34 @@
         chart.draw(data, options);
       }
     </script>
+
 </head>
 <body>
-  <section class="barraSup"> <!--nuevo -->
+   <header>
+      <div id="cont" class="cont">  
+         <div id="stripes" class="icon" onclick="add()">
+      <div class="hamburger"> </div>
+    </div>
+        <img src="assets/images/logo-laboratoria.svg" alt=""> 
+      </div>
+    </header>
+
+ <section class="barraSup">
     <nav class="naveg">
       <h2>SANTIAGO DE CHILE. V GENERACIÓN (2017 - II)</h2>
       <ul class="listanav">
-        <a class="over">GENERAL </a>
-        <a class="stud" href="indexstudy.html">ESTUDIANTES </a>
-        <a class="teac" href="">PROFESORES </a>
+        <a class="over" href="linechart.html">GENERAL</a>
+        <a class="stud" href="indexstudy.html">ESTUDIANTES</a>
+        <a class="teac" href="">PROFESORES</a>
       </ul>
 
     </nav>
-  </section> <!--nuevo -->
+  </section>
+
+    <script src="js/app.js"></script>
 
   <div class="container">  <!-- VISTA GENERAL -->
-    <canvas id="bar-chart" width="850" height="450"></canvas>
+    <canvas id="bar-chart" width="750" height="450"></canvas>
   </div>
 
   <script>    //grafico general//
@@ -56,12 +68,12 @@
     new Chart(document.getElementById("bar-chart"), {
         type: 'bar',
         data: {
-          labels: ["Inscritas", "Presentes", "Desertaron", "Aprobadas", "Reprobadas"],
+          labels: ["Inscritas", "Presentes", "Desertaron", "Aprobadas", "Reprobadas", "Contratadas"],
           datasets: [
             {
               label: "Porcentaje (%)",
-              backgroundColor: ["crimson", "aqua","darkblue","gold","darkviolet"],
-              data: [100,77,23,74,26]   //porcentajes de cada item //
+              backgroundColor: ["greenyellow", "aqua","black","gold","darkviolet", "lightsalmon"],
+              data: [100,77,23,74,26,98]   //porcentajes de cada item //
             }
           ]
         },
@@ -89,11 +101,11 @@
           datasets: [
             {
               label: "2016",
-              backgroundColor: "#3e95cd",
+              backgroundColor: "gainsboro",
               data: [150,40,80]
             }, {
               label: "2017",
-              backgroundColor: "#8e5ea2",
+              backgroundColor: "gold",
               data: [170,35,114]
             }
           ]
@@ -101,14 +113,14 @@
         options: {
           title: {
             display: true,
-            text: 'ENRROLMENT 2016 - 2017'
+            text: 'ENRROLMENT 2016 - 2017 (INSCRIPCIONES)'
           },
           responsive: false
         }
     });
   </script>
 
-  <div class="container2">   <!-- ENVIROMENTS -->
+  <div class="container2">   <!-- ACHIEVMENT -->
   <canvas id="bar-chart-grouped2" width="350" height="350"></canvas>
   </div>
 
@@ -120,7 +132,7 @@
           datasets: [
            {
               label: "2017",
-              backgroundColor: "#8e5ea2",
+              backgroundColor: "lightsteelblue",
               data: [100,84,114,145]
             }
           ]
@@ -128,7 +140,7 @@
         options: {
           title: {
             display: true,
-            text: 'ACHIEVEMENT'
+            text: 'ACHIEVMENT (LOGROS)'
           },
           responsive: false
         }
@@ -149,7 +161,7 @@
           datasets: [
            {
               label: "2017",
-              backgroundColor: "#8e5ea2",
+              backgroundColor: "gold",
               data: [170,35,114]
             }
           ]
@@ -157,7 +169,7 @@
         options: {
           title: {
             display: true,
-            text: 'NEW PROMOTER SCORE - 2017'
+            text: 'NEW PROMOTER SCORE - 2017 (PROMOTORES)'
           },
           responsive: false
         }
@@ -165,12 +177,12 @@
   </script>
 
   <div> <!--TECH Y LIFE SKILLS-->
-    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div" style="width: 1000px; height: 500px;"></div>
   </div> 
 
 
   <div class="donut">   <!--STUDENTS KNOW THE TARGET -->
-    <canvas id="pie-chart" width="500" height="450"></canvas>
+    <canvas id="pie-chart" width="300" height="300"></canvas>
   </div>
 
   <script>
@@ -180,14 +192,14 @@
           labels: ["STUDENTS THAT MEET THE TARGET", "STUDENTS THAT DON'T MEET THE TARGET"],
           datasets: [{
             label: "STUDEN MEET THE TARGET",
-            backgroundColor: ["GOLD", "#8e5ea2"],
+            backgroundColor: ["plum", "BLUE"],
             data: [85,15]
           }]
         },
         options: {
           title: {
             display: true,
-            text: 'TECH SKILLS % STUDENTS THAT MEET THE TARGET'
+            text: 'TECH SKILLS % STUDENTS'
           },
           responsive: false
         }
@@ -195,7 +207,7 @@
   </script>  
 
   <div class="donut2"> <!--STUDENTS KNOW THE TARGET -->
-  <canvas id="doughnut-chart" width="450" height="450"></canvas>
+  <canvas id="doughnut-chart" width="300" height="300"></canvas>
   </div>
 
   <script>
@@ -206,7 +218,7 @@
           datasets: [
             {
               label: "TARGET",
-              backgroundColor: ["#3e95cd", "#8e5ea2"],
+              backgroundColor: ["lightpink", "RED"],
               data: [87,13]
             }
           ]
@@ -214,7 +226,46 @@
         options: {
           title: {
             display: true,
-            text: 'LIFE SKILLS % STUDENTES THAT MEET THE TARGET'
+            text: 'LIFE SKILLS % STUDENTS'
+          },
+          responsive: false
+        }
+    });
+  </script>
+
+  <div class="container6">  <!--SATISFACTION-->
+  <canvas id="bar-chart-grouped6" width="950" height="350"></canvas>
+  </div>
+
+  <script>
+        new Chart(document.getElementById("bar-chart-grouped6"), {
+        type: 'bar',
+        data: {
+          labels: ["SPR 1", "SPR 2", "SPR 3", "SPR 4"],
+          datasets: [
+            {
+              label: "STUDENT SATISFACTION", 
+              backgroundColor: "lightskyblue",
+              data: [93,88,76,89]
+            }, {
+              label: "TEACHER RATING",
+              backgroundColor: "gold",
+              data: [88,95,97,95]
+            }, {
+              label: "JEDI MASTER RATING",
+              backgroundColor: "lightpink",
+              data: [87,93,84,89]
+            }, {
+              label: "SELF APPRAISAL (AUTOEVALUACIÓN)",
+              backgroundColor: "lightgreen",
+              data: [57,83,74,80]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'RATING'
           },
           responsive: false
         }
