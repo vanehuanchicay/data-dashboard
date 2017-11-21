@@ -226,7 +226,6 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	height: 130px;
 	width: 100%;
 	margin-top: 25px;
-	
 	text-align: center;
 }
 
@@ -235,12 +234,13 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	font-family: Lato;
 	font-weight: 700;
 	color: #555;
-	margin-top: 30px;
+	margin-top: 40px;
+	padding-top: 30px;
 	width: 1301px;
 }
 
 .listanav{ /* lista navegacion */
-	margin-left:340px;
+	margin-left:370px;
 	margin-top: 17px;
 }
 
@@ -499,7 +499,6 @@ h4{ /* subtitulo front end */
 	top: -10;
 }
 
-<<<<<<< d8662327f35d83a0b2a03cb2aabbccd8ad2a4c2b
 
 /* AQUI COMIENZAN LOS GRAFICOS */
 
@@ -508,8 +507,10 @@ h4{ /* subtitulo front end */
 	background: mintcream;
 	border: 2px solid grey;
 	position: absolute;
-	margin-top: 250px;
+	margin-top: 50px;
+	padding-left:50px;
 	font-family: Lato;
+
 
 }
 .container1{  /*enrollment */
@@ -568,14 +569,13 @@ h4{ /* subtitulo front end */
 	font-family: Lato;
 	padding-bottom: 200px;
 }
-=======
+
 .con .sections_btn_holder{ /*aqui empiza checkbox */
 	float:left;
 	width:144px;
 	height:46px;
 	margin-top: -45px;
 	margin-left: 60px;
-	
 }
 
 .con .sections_panel{
@@ -585,12 +585,13 @@ h4{ /* subtitulo front end */
 	box-shadow: 0 2px 10px rgba(0,0,0,.2);
 	height:0px;
 	width:150px;
-	top:60px;
-	left:930px;
+	top:185px;
+	left:925px;
 	overflow:hidden;
 	z-index:10000;
-	transition: height 0.3s linear 0s;
+	transition: height 0.3s linear 0s;	
 }
+
 .con .sections_panel div{
 	padding:20px;
 	height:238px;
@@ -657,4 +658,3 @@ h4{ /* subtitulo front end */
 	display:inline;
 }
 */
->>>>>>> ultimos cambios
