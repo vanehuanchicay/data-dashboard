@@ -16,6 +16,8 @@
       })
     </script> 
     <title>Data Dashboard</title>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
   </head>
   <body>
     <header>
@@ -51,31 +53,10 @@
        </div>
       </div>
   </section>
-   <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['SPRINT', 'TECH SKILLS', 'LIFE SKILLS'],
-          ['SPR 1',  45,       73],
-          ['SPR 2',  84,       89],
-          ['SPR 3',  76,       78],
-          ['SPR 4',  86,       83],
-        ]);
-
-        var options = {
-          title: 'STUDENT SKILLS',
-          hAxis: {title: '2017',  titleTextStyle: {color: '#FF8C00'}},
-          vAxis: {minValue: 0}
-        };
-
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
-    <div class="container">  <!-- VISTA GENERAL -->
-    <canvas id="bar-chart" width="750" height="450"></canvas>
+   
+    <div>  <!-- VISTA GENERAL -->
+    <canvas id="bar-chart" width="850" height="550"></canvas>
   </div>
 
   <script>    //grafico general//
@@ -248,9 +229,6 @@
     });
   </script>
 
-  <div> <!--TECH Y LIFE SKILLS-->
-    <div id="chart_div" style="width: 1000px; height: 500px;"></div>
-  </div> 
 
 
   <div class="donut">   <!--STUDENTS KNOW THE TARGET -->
@@ -277,6 +255,37 @@
         }
     });
   </script>  
+
+  <div class="container4"> <!--TECH Y LIFE SKILLS-->
+   <canvas id="line-chart" width="1050" height="450"></canvas>
+ </div>
+ <script>
+
+     new Chart(document.getElementById("line-chart"), {
+ type: 'line',
+ data: {
+   labels: ["S 1","S 2","S 3","S 4"],
+   datasets: [{
+       data: [86,74,86,97,83,100,67,78,88],
+       label: "TECH SKILLS",
+       borderColor: "plum",
+       fill: true,
+     }, {
+       data: [77,87,84,95,90,70,89,93,96],
+       label: "LIFE SKILLS",
+       borderColor: "lightpink",
+       fill: true,
+     },
+   ]
+ },
+ options: {
+   title: {
+     display: true,
+     text: 'TECH / LIFE SKILLS BY SPRINT'
+   }
+ }
+});
+</script>
 
   <div class="donut2"> <!--STUDENTS KNOW THE TARGET -->
   <canvas id="doughnut-chart" width="300" height="300"></canvas>

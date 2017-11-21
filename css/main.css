@@ -502,61 +502,62 @@ h4{ /* subtitulo front end */
 
 /* AQUI COMIENZAN LOS GRAFICOS */
 
+#bar-chart{
 
-.container{  /*PRIMER GRAFICO // *vista general generación actual*/
-	background: mintcream;
-	border: 2px solid grey;
-	position: absolute;
-	margin-top: 50px;
-	padding-left:50px;
-	font-family: Lato;
-
-
+	margin-left:220px;
+	margin-top: 100px;
 }
+
 .container1{  /*enrollment */
-	background: mintcream;
+	/*background: mintcream; */
 	position: absolute;
-	margin-top: 750px;
-	margin-left: 100px;
+	margin-top: 150px;
+	margin-left: 80px;
 	font-family: Lato;
 }
 .container2{  /*ACHIEVEMENT *comparación 2016 y 2017 */
-	background: mintcream;
+	/*background: mintcream;*/
 	position: absolute;
-	margin-top: 750px;
-	margin-left: 500px;
+	margin-top: 150px;
+	margin-left: 480px;
 	font-family: Lato;
 
 }
 .container3{  /*NEW PROMOTORS SCORE  *comparación 2016 y 2017 */
-	background: mintcream;
+	/*background: mintcream;*/
 	position: absolute;
-	margin-top: 750px;
-	margin-left: 900px;
+	margin-top: 150px;
+	margin-left: 880px;
 	float: left;
 	font-family: Lato;
-
 }
+.container4{
+	position: absolute;
+	margin-top: 600px;
+	margin-left: 100px;
+}
+
 #chart_div{  /*TECH Y LIFE SKILLS*/
 	position: absolute;
-	margin-top: 1150px;
+	margin-top: 1050px;
 	margin-left: 150px;
 	font-family: Lato;
+	outline: 1px solid yellow;
 	
 }
 .donut{  /*TECH SKILLS STUDENT THAT MEET THE TARGET*/
 	
 	position: absolute;
-	margin-top: 1650px;
-	margin-left: 300px;
+	margin-top: 1150px;
+	margin-left: 200px;
 	font-family: Lato;
 	
 }
 
 .donut2{ /*LIFE SKILLS STUDENT THAT MEET THE TARGET*/
 	position: absolute;
-	margin-top: 1650px;
-	margin-left: 700px;
+	margin-top: 1150px;
+	margin-left: 800px;
 	font-family: Lato;
 	
 }
@@ -564,8 +565,8 @@ h4{ /* subtitulo front end */
 .container6{   /*evaluaciones teacher jedi autoevaluacion satisfaccion alumnas */
 
 	position: absolute;
-	margin-top: 2000px;
-	margin-left: 200px;
+	margin-top: 1650px;
+	margin-left: 170px;
 	font-family: Lato;
 	padding-bottom: 200px;
 }
