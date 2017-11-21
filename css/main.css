@@ -221,7 +221,7 @@ body{/* COLOR GRIS MUY TENUE fondo */
 	height: 130px;
 	width: 100%;
 	margin-top: 25px;
-	position: absolute;
+	
 	text-align: center;
 }
 
@@ -494,9 +494,64 @@ h4{ /* subtitulo front end */
 	top: -10;
 }
 
-/*
-.proa , .squa , .best:hover{
-	color:blue;
 
-} 
-*/
+/* AQUI COMIENZAN LOS GRAFICOS */
+
+
+.container{  /*PRIMER GRAFICO // *vista general generación actual*/
+	background: lightgoldenrodyellow;
+	position: absolute;
+	margin-top: 250px;
+	margin-left: 100px;
+	font-family: Lato;
+
+}
+.container1{  /*enrollment */
+	background: papayawhip;
+	position: absolute;
+	margin-top: 750px;
+	margin-left: 50px;
+	font-family: Lato;
+}
+.container2{  /*ACHIEVEMENT *comparación 2016 y 2017 */
+	background: lightcyan;
+	position: absolute;
+	margin-top: 750px;
+	margin-left: 450px;
+	font-family: Lato;
+
+}
+.container3{  /*NEW PROMOTORS SCORE  *comparación 2016 y 2017 */
+	background: palegoldenrod;
+	position: absolute;
+	margin-top: 750px;
+	margin-left: 850px;
+	float: left;
+	font-family: Lato;
+
+}
+
+.donut{
+	background: peachpuff;
+	position: absolute;
+	margin-top: 1600px;
+	margin-left: 100px;
+	font-family: Lato;
+	
+}
+
+.donut2{
+	background: lightcyan;
+	position: absolute;
+	margin-top: 1600px;
+	margin-left: 750px;
+	font-family: Lato;
+	
+}
+#chart_div{  /*TECH Y LIFE SKILLS*/
+	position: absolute;
+	margin-top: 1100px;
+	margin-left: 200px;
+	font-family: Lato;
+	
+}

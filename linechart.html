@@ -9,6 +9,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <title>My Chart.js Chart</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <!--AQUI EMPIEZA EL GRAFICO DE HABILIDADES TECNICAS Y DE VIDA -->
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['SPRINT', 'TECH SKILLS', 'LIFE SKILLS'],
+          ['SPR 1',  45,       73],
+          ['SPR 2',  84,       89],
+          ['SPR 3',  76,       78],
+          ['SPR 4',  86,       83],
+        ]);
+
+        var options = {
+          title: 'STUDENT SKILLS',
+          hAxis: {title: '2017',  titleTextStyle: {color: '#FF8C00'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
   <section class="barraSup"> <!--nuevo -->
@@ -23,63 +47,180 @@
     </nav>
   </section> <!--nuevo -->
 
-  <div class="container">
-    <canvas id="line-chart" width="850px" height="450px"></canvas>
+  <div class="container">  <!-- VISTA GENERAL -->
+    <canvas id="bar-chart" width="850" height="450"></canvas>
+  </div>
+
+  <script>    //grafico general//
+// Bar chart
+    new Chart(document.getElementById("bar-chart"), {
+        type: 'bar',
+        data: {
+          labels: ["Inscritas", "Presentes", "Desertaron", "Aprobadas", "Reprobadas"],
+          datasets: [
+            {
+              label: "Porcentaje (%)",
+              backgroundColor: ["crimson", "aqua","darkblue","gold","darkviolet"],
+              data: [100,77,23,74,26]   //porcentajes de cada item //
+            }
+          ]
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Visión general V Generación Laboratoria (2017)'
+          },
+          responsive: false
+        }
+    });
+      
+  </script>
+
+  <div class="container1">  <!--ENROLLMENTS-->
+  <canvas id="bar-chart-grouped1" width="350" height="350"></canvas>
   </div>
 
   <script>
-    new Chart(document.getElementById("line-chart"), {
-  type: 'horizontalBar',
-  data: {
-    labels: ['Sprint I', 'Sprint II', 'Sprint III', 'Sprint IV'],
-    datasets: [{ 
-        data: [53, 51,48,45],
-        label: "Alumnas Presentes",
-        borderColor: "#3e95cd",
-        fill: false
-      }, { 
-        data: [2,5,5,7],
-        label: "Deserción",
-        borderColor: "#8e5ea2",
-        fill: false
-      }, { 
-        data: [60,67,73,80],
-        label: "Promedio de Metas",
-        borderColor: "#3cba9f",
-        fill: false
-      }, { 
-        data: [66,70,73,82],
-        label: "Promedio Sprint",
-        borderColor: "#e8c3b9",
-        fill: false
-      }, { 
-        data: [70,78,80,90],
-        label: "Promedio HSE",
-        borderColor: "#c45850",
-        fill: false
-      },{
-        data: [80,75,90,95],
-        label: "Satisfacción",
-        borderColor: "#C440B7",
-        fill: false
-      }
-    ]
-
-  },
-  options: {
-    title: {
-      display: true,
-      text: 'Estadística General',
-      fontSize:20
-    },legend:{
-      display:true,
-      position:"right",
-    },
-      responsive: false
-      }
-  
-});
+        new Chart(document.getElementById("bar-chart-grouped1"), {
+        type: 'bar',
+        data: {
+          labels: ["Inscritas", "Desertaron", "Aprobadas"],
+          datasets: [
+            {
+              label: "2016",
+              backgroundColor: "#3e95cd",
+              data: [150,40,80]
+            }, {
+              label: "2017",
+              backgroundColor: "#8e5ea2",
+              data: [170,35,114]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'ENRROLMENT 2016 - 2017'
+          },
+          responsive: false
+        }
+    });
   </script>
+
+  <div class="container2">   <!-- ENVIROMENTS -->
+  <canvas id="bar-chart-grouped2" width="350" height="350"></canvas>
+  </div>
+
+  <script>
+        new Chart(document.getElementById("bar-chart-grouped2"), {
+        type: 'bar',
+        data: {
+          labels: ["SPR 1", "SPR 2", "SPR 3", "SPR 4"],
+          datasets: [
+           {
+              label: "2017",
+              backgroundColor: "#8e5ea2",
+              data: [100,84,114,145]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'ACHIEVEMENT'
+          },
+          responsive: false
+        }
+    });
+  </script>
+
+
+
+  <div class="container3">   <!-- PROMOTORES -->
+  <canvas id="bar-chart-grouped3" width="350" height="350"></canvas>
+  </div>
+
+  <script>
+        new Chart(document.getElementById("bar-chart-grouped3"), {
+        type: 'bar',
+        data: {
+          labels: ["Promotores", "Indiferentes", "Detractores"],
+          datasets: [
+           {
+              label: "2017",
+              backgroundColor: "#8e5ea2",
+              data: [170,35,114]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'NEW PROMOTER SCORE - 2017'
+          },
+          responsive: false
+        }
+    });
+  </script>
+
+  <div> <!--TECH Y LIFE SKILLS-->
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </div> 
+
+
+  <div class="donut">   <!--STUDENTS KNOW THE TARGET -->
+    <canvas id="pie-chart" width="500" height="450"></canvas>
+  </div>
+
+  <script>
+        new Chart(document.getElementById("pie-chart"), {
+        type: 'pie',
+        data: {
+          labels: ["STUDENTS THAT MEET THE TARGET", "STUDENTS THAT DON'T MEET THE TARGET"],
+          datasets: [{
+            label: "STUDEN MEET THE TARGET",
+            backgroundColor: ["GOLD", "#8e5ea2"],
+            data: [85,15]
+          }]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'TECH SKILLS % STUDENTS THAT MEET THE TARGET'
+          },
+          responsive: false
+        }
+    });
+  </script>  
+
+  <div class="donut2"> <!--STUDENTS KNOW THE TARGET -->
+  <canvas id="doughnut-chart" width="450" height="450"></canvas>
+  </div>
+
+  <script>
+    new Chart(document.getElementById("doughnut-chart"), {
+        type: 'doughnut',
+        data: {
+          labels: ["STUDENTS THAT MEET THE TARGET", "STUDENTS THAT DON'T MEET THE TARGET"],
+          datasets: [
+            {
+              label: "TARGET",
+              backgroundColor: ["#3e95cd", "#8e5ea2"],
+              data: [87,13]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'LIFE SKILLS % STUDENTES THAT MEET THE TARGET'
+          },
+          responsive: false
+        }
+    });
+  </script>
+  
 
 </body>
 </html>
